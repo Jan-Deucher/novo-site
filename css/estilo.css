@@ -1,0 +1,206 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  
+    rgba(204,254,152,1) 0%,
+    rgba(229,253,190,1) 92.4% );
+}
+
+h1, h2, h3{
+    color: rgb(73, 76, 78);
+    background-color: rgba(53, 184, 75, 0.356);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  
+    rgba(204,254,152,1) 0%,
+    rgba(229,253,190,1) 92.4% );
+    padding: 20px;
+}
+
+nav > a{
+    text-decoration: none;
+    color:darkgoldenrod;
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+#logo{
+    float: left;
+    margin-left: 1em;
+    
+}
+
+#pacote{
+    color:honeydew;
+}
+
+#paragrafo-pacote{
+    background-color: rgba(53, 184, 75, 0.507);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
+}
+.link{
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(12, 54, 5);
+    background-color: honeydew;
+    padding: 5px;
+    border-radius: 5px;
+}
+.link:hover{
+    font-size: px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: darkgoldenrod;
+    
+}
+nav ul li a:hover{
+    color: rgb(44, 85, 3);
+    font-size: 18px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/woman-1784755_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: honeydew;
+    text-align: center;
+    padding: 70px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+#servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(44, 36, 36);
+}
+
+.titulo-servicos{
+    color: rgb(44, 85, 3);
+}
+
+#viagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#viagem img {
+    width: 100%;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.dados-contato{
+    text-decoration: none;
+    color:darkgoldenrod;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  
+    rgba(204,254,152,1) 0%,
+    rgb(200, 216, 173) 92.4% );
+    color: darkgoldenrod;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+@media screen and (min-width:768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%,;
+    }
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    #servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .titulo-servicos{
+        text-align: center;
+        width: 100%;   
+    }
+    #servicos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #viagem{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #viagem img{
+        width: 33.333333%;
+    }
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto
+    }
+    .dados-contato{
+        width: 100%;
+    }
+}
