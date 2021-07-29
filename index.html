@@ -2,24 +2,27 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Deucher Viagens</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@392;500&family=Encode+Sans+SC:wght@300&family=Uchen&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
       
-        <nav> 
+        <nav class= "navbar navbar-expand-lg" role="navigation" id="menu"> 
             <img id="logo" src="img/crown(1).png"> 
             <a href="#">Deucher Viagens</a>
             <ul>
-                <li><a href="#pacotes-promocionais">Pacotes Promocionais</li></a>
-                <li><a href="#viagem-nacional">Viagem Nacional</li></a>
-                <li><a href="#viagem-internacional">Viagem Internacional</li></a>
-                <li><a href="#contato">Contato</li></a>
+                <li class="item"><a href="#pacotes-promocionais">Pacotes Promocionais</li></a>
+                <li class="item"><a href="#viagem-nacional">Viagem Nacional</li></a>
+                <li class="item"><a href="#viagem-internacional">Viagem Internacional</li></a>
+                <li class="item"><a href="#contato">Contato</li></a>
             </ul>
         </nav>
         <header id="topo">
@@ -28,12 +31,12 @@
             Aproveite! Comece logo a planejar sua próxima aventura com os nossos pacotes promocionais.</p>
             <a href="#pacotes-promocionais" class="link">Ver mais</a>
         </header>
-
+        <h2 class="titulo-servicos"><i>Por que viajar com a gente?</i></h2>
         <section id="servicos">
-            <h2 class="titulo-servicos">Por que viajar com a gente?</h2>
+          
             <div>
                 <img src="img/plane.png" alt="aviao">
-                <h3>Passagens baratas</h3>
+                <h3 class="tit-servicos">Passagens baratas</h3>
                 <p class="paragrafo-servicos">
                     Passagem aérea é o método de ingresso para as viagens de avião. 
                     As companhias aéreas vendem a passagem para o comprador, 
@@ -42,7 +45,7 @@
             </div>
             <div>
                 <img src="img/hotel-sign.png" alt="hotel">
-                <h3>Melhores Hotéis</h3>
+                <h3 class="tit-servicos">Melhores Hotéis</h3>
                 <p class="paragrafo-servicos"> 
                     Reserve em 85.000 destinos no mundo todo, sempre o melhor preço. 
                     Apartamentos de ferias. Motéis. Hotéis. Villas. Pousadas. Albergue. 
@@ -50,7 +53,7 @@
             </div>
             <div>
                 <img src="img/luggage.png" alt="mala">
-                <h3>Seguro de viagem</h3>
+                <h3 class="tit-servicos">Seguro de viagem</h3>
                 <p class="paragrafo-servicos">
                     Você conta com Assistência Médica Hospitalar, Odontológica, Farmacêutica, Bagagem,
                      Repatriação e muito mais.Os planos mudaram? Cancele antes do início da vigência e 
@@ -59,24 +62,114 @@
             </div>
             <div>
                 <img src="img/transfer.png" alt="transfer">
-                <h3>Transfer</h3>
+                <h3 class="tit-servicos">Opção Transfer</h3>
                 <p class="paragrafo-servicos">
                     Temos serviço de Transfer, é uma das forma mais seguras de você realizar
                     o traslado do aeroporto até o resort e do resort para o aeroporto.
                 </p>
             </div>
         </section>  
-        <section id="viagem">
-            <h2 class="titulo-servicos" >Você merece curtir cada momento</h2>
-            <img src="img/ceu.jpg">
-            <img src="img/grama.jpg">
-            <img src="img/mar.jpg">
-            <img src="img/montanha.jpg">
-            <img src="img/ponte.jpg">
-            <img src="img/arvores.jpg">
+        <section id="pacotes-promocionais">
+            <h2 class="titulo-servicos"><i>Melhores preços</i></h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3 text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/pedra-furada-3655538_640.jpg" class="card-img-top img-fluid" alt="pedra-furada">
+                    <div class="card-body">
+                      <h5 class="card-title">URUBICI/SC</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/schilthorn-3033448_640.jpg" class="card-img-top" alt="schilthorn">
+                    <div class="card-body">
+                      <h5 class="card-title">ALPES SUIÇOS</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/wintry-3758523_640.jpg" class="card-img-top" alt="wintry">
+                    <div class="card-body">
+                      <h5 class="card-title">SANTIGO - CHILE</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card  text-center  text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/people-3204098_640.jpg" class="card-img-top" alt="people">
+                    <div class="card-body">
+                      <h5 class="card-title">GRAMADO/RS</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <nav>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3 text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/rio-de-janeiro-1963744_640.jpg" class="card-img-top" alt="rio-de-janeiro">
+                    <div class="card-body">
+                      <h5 class="card-title">RIO DE JANEIRO/RJ</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card  text-center  text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/beach-666122_640.jpg" class="card-img-top" alt="praia">
+                    <div class="card-body">
+                      <h5 class="card-title">RECIFE/PE</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/bora-bora-3023437_640.jpg" class="card-img-top" alt="bora-bora">
+                    <div class="card-body">
+                      <h5 class="card-title">BORA-BORA - CARIBE</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card   text-center text-white bg-success mb-3" style="width: 40rem;">
+                    <img src="img/the-palm-962785_640.jpg" height="426px" class="card-img-top" alt="emirados arábes">
+                    <div class="card-body">
+                      <h5 class="card-title">EMIRADOS ÁRABES</h5>
+                      <p class="card-text">Data 30/07/2021</p>
+                      <p class="card-text">- A partir de <b>R$ 3250,00 em 10X sem juros</b></p>
+                      <a href="#" class="btn btn-primary">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>   
         </section>
+        </nav>
         <section id="contato">
-            <h2 class="titulo-servicos">Vem falar com a gente</h2>
+            <h2 class="titulo-servicos"><i>Vem falar com a gente</i></h2>
             <div>
                 <img src="img/whatsapp.png" alt="whatsapp">
                 <p class="dados-contato"><a class="dados-contato" href="tel:41995116385">(41) 99511-6385</a></p>
@@ -86,14 +179,33 @@
                 <p class="dados-contato"><a class="dados-contato" href="mailto:janeteneneve@hotmail.com">janeteneneve@hotmail.com</a></p>
             </div>   
         </section>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <a href="#topo">voltar ao topo</a>
         <p id="copyright"> © Deucher Viagens - 2021 - todos os direitos reservados.</p>
     </footer>    
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 
