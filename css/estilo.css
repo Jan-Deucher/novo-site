@@ -5,11 +5,12 @@ body{
     rgba(229,253,190,1) 92.4% );
 }
 
-h1, h2, h3{
+.tit-servicos{
     color: rgb(73, 76, 78);
     background-color: rgba(53, 184, 75, 0.356);
     padding: 8px;
     border-radius: 5px;
+   
 }
 
 nav{
@@ -17,9 +18,9 @@ nav{
     flex-direction: column;
     align-items: center;
     background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  
-    rgba(204,254,152,1) 0%,
-    rgba(229,253,190,1) 92.4% );
-    padding: 20px;
+    rgba(205, 254, 152, 0.678) 0%,
+    rgba(229, 253, 190, 0.726) 92.4% );
+    padding: 100px;
 }
 
 nav > a{
@@ -33,18 +34,16 @@ nav > a{
 #logo{
     float: left;
     margin-left: 1em;
+    width: 64px;
     
 }
 
-#pacote{
-    color:honeydew;
-}
-
-#paragrafo-pacote{
-    background-color: rgba(53, 184, 75, 0.507);
+#paragrafo-pacote, #pacote {
+    background-color: rgba(19, 71, 28, 0.616);
     color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 5px;
+    margin-top: 2em;
 }
 .link{
     font-weight: bold;
@@ -68,6 +67,13 @@ nav ul{
 nav ul li{
     width: 100%;
     text-align: center;
+    font-weight: bold;
+}
+
+#menu{
+    position:fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 nav ul li a {
@@ -75,29 +81,30 @@ nav ul li a {
     padding: 10px 0;
     width: 100%;
     text-decoration: none;
-    color: darkgoldenrod;
-    
+    color: darkgoldenrod;  
 }
 nav ul li a:hover{
     color: rgb(44, 85, 3);
     font-size: 18px;
 }
-header{
+.item{
+    background-color: rgb(243, 242, 229);
+    margin-left: 1em;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+#topo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../img/woman-1784755_1920.jpg");
+    background: url("../img/hallstatt-3609863_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: honeydew;
-    text-align: center;
-    padding: 70px;
+    text-align: center; 
 }
 
-header p {
-    margin-bottom: 2em;
-}
 #servicos{
     display: flex;
     flex-direction: column;
@@ -116,6 +123,9 @@ header p {
 
 .titulo-servicos{
     color: rgb(44, 85, 3);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bolder;
 }
 
 #viagem{
@@ -125,8 +135,11 @@ header p {
     padding-top: 20px;
 }
 
-#viagem img {
-    width: 100%;
+
+.row{
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
 }
 
 #contato{
@@ -154,6 +167,12 @@ footer{
 footer a {
     text-decoration: none;
     color: darkgoldenrod;
+}
+
+#pacotes-promocionais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width:768px){
