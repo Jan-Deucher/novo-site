@@ -141,17 +141,27 @@ nav ul li a:hover{
     padding-top: 20px;
 }
 .card-text{
-    font-size: 14px;
+    font-size: 16px;
 }
-.card-header, .card-body{
+.card-header, .card-body, .card{
     background: #348F50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.card, .card-body, .card-img-top, .card-header{
-    box-shadow: 2px 1px 5px rgb(175, 175, 175);
+ .card-header{
+    border: none;
+    margin-top: 1em;
 }
-
+.preco{
+    margin: 0;
+    position:relative;
+    top: 100px;
+    color:rgb(37, 11, 184);
+    background-color:  rgba(243, 242, 229, 0.698);
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+}
 
 #contato, #contato-pacotes{
     display: flex;
