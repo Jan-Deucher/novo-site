@@ -20,7 +20,7 @@ nav{
     background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  
     rgba(205, 254, 152, 0.678) 0%,
     rgba(229, 253, 190, 0.726) 92.4% );
-    padding: 100px;
+    padding: 80px;
 }
 
 nav > a{
@@ -34,27 +34,34 @@ nav > a{
 #logo{
     float: left;
     margin-left: 1em;
-    width: 64px;
-    
+    width: 64px; 
 }
 
-#paragrafo-pacote, #pacote {
+ #pacote {
     background-color: rgba(19, 71, 28, 0.616);
     color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 5px;
-    margin-top: 2em;
+    
 }
-.link{
-    font-weight: bold;
-    text-decoration: none;
-    color:rgb(12, 54, 5);
-    background-color: honeydew;
-    padding: 5px;
+
+#paragrafo-pacote{
+    background-color: rgba(19, 71, 28, 0.767);
+    color: rgb(255, 255, 255);
+    padding: 15px;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
-.link:hover{
-    font-size: px;
+#link{
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 400px;
+}
+ #link:hover{
+    font-size: 18px;
+}
+.btn:hover{
+    font-size: 18px;
 }
 nav ul{
     display: flex;
@@ -63,7 +70,6 @@ nav ul{
     list-style: none;
     width: 100%;
 }
-
 nav ul li{
     width: 100%;
     text-align: center;
@@ -71,7 +77,7 @@ nav ul li{
 }
 
 #menu{
-    position:fixed;
+  
     width: 100%;
     z-index: 100;
 }
@@ -93,7 +99,7 @@ nav ul li a:hover{
     border-top-left-radius: 10px;
     box-shadow: 2px 2px 5px gray;
 }
-#topo{
+.header-main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,15 +140,20 @@ nav ul li a:hover{
     align-items: center;
     padding-top: 20px;
 }
-
-
-.row{
-    margin-left: 5%;
-    margin-top: 2%;
-    display: flex;
+.card-text{
+    font-size: 14px;
+}
+.card-header, .card-body{
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card, .card-body, .card-img-top, .card-header{
+    box-shadow: 2px 1px 5px rgb(175, 175, 175);
 }
 
-#contato{
+
+#contato, #contato-pacotes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,12 +193,12 @@ footer a {
     }
     nav ul{
         flex-direction: row;
-        width: 70%,;
+        width: 100%,;
     }
     header {
         height: 600px;
         height: 60vh;
-        justify-content: center;
+        justify-content: space-between;
     }
     #servicos{
         flex-direction: row;
@@ -222,4 +233,5 @@ footer a {
     .dados-contato{
         width: 100%;
     }
+  
 }
